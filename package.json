@@ -19,7 +19,7 @@
     "mongodb",
     "mongo",
     "database",
-    "retention",
+    "retention"
   ],
   "dependencies": {
     "shinken": ">=2.2"
