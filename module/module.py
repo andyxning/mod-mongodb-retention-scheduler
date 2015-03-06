@@ -24,11 +24,7 @@ try:
 except ImportError:
     raise Exception('Python binding for MongoDB has not been installed. '
                     'Please install "pymongo" first')
-
-try:
-    from setproctitle import setproctitle
-except ImportError:
-    setproctitle = lambda s: None
+    
 
 from shinken.basemodule import BaseModule
 from shinken.log import logger
@@ -118,7 +114,6 @@ class MongodbRetentionScheduler(BaseModule):
                      % self.mongodb_url)
     
     def _init(self):
-        self._do_stop()
         try:
             if not self.high_availability:
                 self.conn = MongoClient(self.mongodb_url)
