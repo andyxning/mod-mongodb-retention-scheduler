@@ -1,3 +1,7 @@
+##Notice
+**Notice: I am not actively developing this Shinken Scheduler module anymore. For more info, please read the Shinken doc about module and read the README for installation instructions about this module. :)** 
+
+
 ## mod-mongodb-retention-scheduler
 This module is used by Scheduler daemon to store retention infos 
 associated with services or hosts to a mongoDB database.  
